@@ -1,5 +1,5 @@
 {% set name = "dedupe-hcluster" %}
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dedupe-hcluster-{{ version }}.tar.gz
-  sha256: 66222055954a354b1adb6f86c50e3277113315107556892b514dab248bc6ac83
+  sha256: 291e87ef7db4656d7365f7665e7a5e5b7ef9bc83bba49e6c33efe11d9a689dbf
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - cython
     - numpy
     - pip
-    - python 
+    - python
   run:
     - numpy  # [py>38]
     - python
