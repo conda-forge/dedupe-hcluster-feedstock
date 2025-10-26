@@ -23,11 +23,11 @@ requirements:
     - numpy
     - pip
     - python
+    - setuptools
   run:
-    - numpy  # [py>38]
+    - numpy
     - python
-    - {{ pin_compatible('numpy') }}
-
+    
 test:
   imports:
     - hcluster
